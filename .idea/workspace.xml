@@ -83,15 +83,28 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/lt/mcforsas/devbridge/Main.java</url>
-          <line>48</line>
-          <option name="timeStamp" value="15" />
+          <line>89</line>
+          <option name="timeStamp" value="20" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/lt/mcforsas/devbridge/Main.java</url>
-          <line>50</line>
-          <option name="timeStamp" value="16" />
+          <line>57</line>
+          <option name="timeStamp" value="29" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/lt/mcforsas/devbridge/Main.java</url>
+          <line>55</line>
+          <option name="timeStamp" value="31" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/lt/mcforsas/devbridge/Main.java</url>
+          <line>72</line>
+          <option name="timeStamp" value="32" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/magicNumber$Main.ic" NAME="Main Coverage Results" MODIFIED="1569729063580" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
   </component>
 </project>

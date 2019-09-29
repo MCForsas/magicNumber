@@ -42,19 +42,19 @@ public class Main {
 
     private static boolean isMagicNumber(String number) {
         //Parse number into int
-        int numberInt;
+        long numberLong;
         try {
-            numberInt = Integer.parseInt(number);
+            numberLong = Long.parseLong(number);
         }catch (NumberFormatException e){
             e.printStackTrace();
             return false;
         }
 
-        int maxMultiplicator = maxMultiplicator(numberInt);
+        int maxMultiplicator = maxMultiplicator(numberLong);
 
 
         for(int i = 2; i < maxMultiplicator; i++){
-            boolean isMagic = isMagicNumbersMultiple(number,String.valueOf(numberInt*i));
+            boolean isMagic = isMagicNumbersMultiple(number,String.valueOf(numberLong*i));
             if(!isMagic){
                 return false;
             }
@@ -63,12 +63,12 @@ public class Main {
         return true;
     }
 
-    private static int maxMultiplicator(Integer number){
+    private static int maxMultiplicator(long number){
         int maxMultiplicator = 1;
         //Loop from 2 to 9, because multiplying by a smaller number will always produce smaller or equal number, and
         // greater than 9 will always prduce bigger number
         for(int i = 2; i < 9; i++){
-            String multiplied = String.valueOf(number * i);
+            String multiplied = String.valueOf(number * (long) i);
             if(multiplied.length() == String.valueOf(number).length()){
                 maxMultiplicator = i;
             }else{

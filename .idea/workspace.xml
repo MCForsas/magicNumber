@@ -88,18 +88,23 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/lt/mcforsas/devbridge/Main.java</url>
-          <line>57</line>
-          <option name="timeStamp" value="29" />
+          <line>69</line>
+          <option name="timeStamp" value="35" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/lt/mcforsas/devbridge/Main.java</url>
-          <line>55</line>
-          <option name="timeStamp" value="31" />
+          <line>71</line>
+          <option name="timeStamp" value="40" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/lt/mcforsas/devbridge/Main.java</url>
           <line>72</line>
-          <option name="timeStamp" value="32" />
+          <option name="timeStamp" value="41" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/lt/mcforsas/devbridge/Main.java</url>
+          <line>78</line>
+          <option name="timeStamp" value="42" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

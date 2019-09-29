@@ -49,7 +49,9 @@ public class Main {
         int maxMultiplicator = maxMultiplicator(numberInt);
 
         for(int i = 2; i < maxMultiplicator; i++){
-
+            if(!isMagicNumbersMultiple(number,String.valueOf(numberInt*i))){
+                return false;
+            }
         }
 
         return true;
@@ -59,9 +61,9 @@ public class Main {
         int maxMultiplicator = 1;
         //Loop from 2 to 9, because multiplying by a smaller number will always produce smaller or equal number, and
         // greater than 9 will always prduce bigger number
-        for(int i = 2; i > 9; i++){
-            String multiplied = Integer.toString(number * i);
-            if(multiplied.length() <= number.toString().length()){
+        for(int i = 2; i < 9; i++){
+            String multiplied = String.valueOf(number * i);
+            if(multiplied.length() == String.valueOf(number).length()){
                 maxMultiplicator = i;
             }else{
                 break;
@@ -72,7 +74,14 @@ public class Main {
     }
 
     public static boolean isMagicNumbersMultiple(String magicNumber, String multiple){
-
+        String searchString;
+        int numberLength = magicNumber.length();
+        for(int i = 0; i < numberLength; i++){
+            searchString = (magicNumber.substring(i + (numberLength - i)) + magicNumber.substring(0,i));
+            if(searchString.equals(magicNumber)){
+                return true;
+            }
+        }
         return false;
     }
 }
